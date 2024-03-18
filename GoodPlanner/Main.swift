@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+
 @main
-struct GoodPlannerApp: App {
+struct Main: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

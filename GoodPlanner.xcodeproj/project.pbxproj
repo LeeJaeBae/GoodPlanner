@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E7214A62BA3D32800AFA7CB /* GoodPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7214A52BA3D32800AFA7CB /* GoodPlannerApp.swift */; };
+		0E688C152BA7E3DA00C2D08D /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E688C142BA7E3DA00C2D08D /* Header.swift */; };
+		0E7214A62BA3D32800AFA7CB /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7214A52BA3D32800AFA7CB /* Main.swift */; };
 		0E7214A82BA3D32800AFA7CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7214A72BA3D32800AFA7CB /* ContentView.swift */; };
 		0E7214AA2BA3D32900AFA7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7214A92BA3D32900AFA7CB /* Assets.xcassets */; };
 		0E7214AD2BA3D32900AFA7CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7214AC2BA3D32900AFA7CB /* Preview Assets.xcassets */; };
@@ -34,8 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E688C142BA7E3DA00C2D08D /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		0E7214A22BA3D32800AFA7CB /* GoodPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E7214A52BA3D32800AFA7CB /* GoodPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodPlannerApp.swift; sourceTree = "<group>"; };
+		0E7214A52BA3D32800AFA7CB /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		0E7214A72BA3D32800AFA7CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E7214A92BA3D32900AFA7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E7214AC2BA3D32900AFA7CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -71,6 +73,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E688C112BA7E28400C2D08D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E7214A72BA3D32800AFA7CB /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E688C122BA7E3AA00C2D08D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0E688C132BA7E3B100C2D08D /* Header */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0E688C132BA7E3B100C2D08D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				0E688C142BA7E3DA00C2D08D /* Header.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		0E7214992BA3D32800AFA7CB = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +120,9 @@
 		0E7214A42BA3D32800AFA7CB /* GoodPlanner */ = {
 			isa = PBXGroup;
 			children = (
-				0E7214A52BA3D32800AFA7CB /* GoodPlannerApp.swift */,
-				0E7214A72BA3D32800AFA7CB /* ContentView.swift */,
+				0E688C122BA7E3AA00C2D08D /* UI */,
+				0E7214A52BA3D32800AFA7CB /* Main.swift */,
+				0E688C112BA7E28400C2D08D /* Views */,
 				0E7214A92BA3D32900AFA7CB /* Assets.xcassets */,
 				0E7214AB2BA3D32900AFA7CB /* Preview Content */,
 			);
@@ -258,7 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E7214A82BA3D32800AFA7CB /* ContentView.swift in Sources */,
-				0E7214A62BA3D32800AFA7CB /* GoodPlannerApp.swift in Sources */,
+				0E7214A62BA3D32800AFA7CB /* Main.swift in Sources */,
+				0E688C152BA7E3DA00C2D08D /* Header.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
