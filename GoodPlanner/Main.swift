@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-
+/**
+    The main entry point of the app.
+ */
 @main
 struct Main: App {
     var body: some Scene {
@@ -16,5 +18,3 @@ struct Main: App {
         }
     }
 }
-
-

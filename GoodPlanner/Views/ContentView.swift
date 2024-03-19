@@ -7,37 +7,52 @@
 
 import SwiftUI
 
+enum Tab {
+    case today
+    case daily
+    case weekly
+    case monthly
+    case yearly
+}
+
 struct ContentView: View {
-    var date = Date()
+    @State var selectedTab: Tab = .today
     var body: some View {
-        NavigationView{
-                TabView{
-                    ScrollView {
-                        VStack {
-                            Header()
-                            Text("Hello, world!")
-                                .padding()
-                        }
-                    }
-                        .tabItem {
-                            Image(systemName: "house")
-                            Text("Home")
-                        }
-                    Text("Second View")
-                        .tabItem {
-                            Image(systemName: "calendar")
-                            Text("Calendar")
-                        }
-                    Text("Third View")
-                        .tabItem {
-                            Image(systemName: "person")
-                            Text("Profile")
-                        }
-                }
-                .navigationTitle(date.formatted(date: Date.FormatStyle.DateStyle.numeric, time: Date.FormatStyle.TimeStyle.omitted))
+        VStack {
+          Spacer()
+            switch selectedTab {
+            case .today:
+                Text("today")
+            case .daily:
+                Text("daily")
+            case .weekly:
+                Text("weekly")
+            case .monthly:
+                Text("monthly")
+            case .yearly:
+                Text("yearly")
+            }
+            Spacer()
+            CustomTabView(selectedTab: $selectedTab)
         }
     }
-        
+}
+
+struct CustomTabView: View {
+    @Binding var selectedTab: Tab
+    var body: some View {
+        HStack {
+            Spacer()
+            Text("today")
+                .onTapGesture {
+                    selectedTab = .today
+                }
+                .font(selectedTab == .today ? .caption : .caption2)
+            
+            Spacer()
+            
+        }
+    }
 }
 
 #Preview {

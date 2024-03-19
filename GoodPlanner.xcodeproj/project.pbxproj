@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E688C152BA7E3DA00C2D08D /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E688C142BA7E3DA00C2D08D /* Header.swift */; };
 		0E7214A62BA3D32800AFA7CB /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7214A52BA3D32800AFA7CB /* Main.swift */; };
 		0E7214A82BA3D32800AFA7CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7214A72BA3D32800AFA7CB /* ContentView.swift */; };
 		0E7214AA2BA3D32900AFA7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7214A92BA3D32900AFA7CB /* Assets.xcassets */; };
@@ -35,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E688C142BA7E3DA00C2D08D /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		0E133B5C2BA84CF8007CEBCF /* GoodPlanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoodPlanner.entitlements; sourceTree = "<group>"; };
 		0E7214A22BA3D32800AFA7CB /* GoodPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7214A52BA3D32800AFA7CB /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		0E7214A72BA3D32800AFA7CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,9 +72,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E133B5B2BA84B5E007CEBCF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0E688C112BA7E28400C2D08D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E688C122BA7E3AA00C2D08D /* UI */,
 				0E7214A72BA3D32800AFA7CB /* ContentView.swift */,
 			);
 			path = Views;
@@ -84,17 +91,8 @@
 		0E688C122BA7E3AA00C2D08D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0E688C132BA7E3B100C2D08D /* Header */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		0E688C132BA7E3B100C2D08D /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				0E688C142BA7E3DA00C2D08D /* Header.swift */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		0E7214992BA3D32800AFA7CB = {
@@ -120,10 +118,11 @@
 		0E7214A42BA3D32800AFA7CB /* GoodPlanner */ = {
 			isa = PBXGroup;
 			children = (
-				0E688C122BA7E3AA00C2D08D /* UI */,
+				0E133B5C2BA84CF8007CEBCF /* GoodPlanner.entitlements */,
 				0E7214A52BA3D32800AFA7CB /* Main.swift */,
 				0E688C112BA7E28400C2D08D /* Views */,
 				0E7214A92BA3D32900AFA7CB /* Assets.xcassets */,
+				0E133B5B2BA84B5E007CEBCF /* Models */,
 				0E7214AB2BA3D32900AFA7CB /* Preview Content */,
 			);
 			path = GoodPlanner;
@@ -286,7 +285,6 @@
 			files = (
 				0E7214A82BA3D32800AFA7CB /* ContentView.swift in Sources */,
 				0E7214A62BA3D32800AFA7CB /* Main.swift in Sources */,
-				0E688C152BA7E3DA00C2D08D /* Header.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoodPlanner/GoodPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GoodPlanner/Preview Content\"";
@@ -476,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GoodPlanner/GoodPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GoodPlanner/Preview Content\"";
